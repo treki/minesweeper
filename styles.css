@@ -1,0 +1,118 @@
+/* Layout */
+html {
+	background-image: url("backgroundImg.png");
+	font-family: 'Aclonica', sans-serif;
+	text-align: center;
+}
+
+.container {
+	background-image: url("backgroundImg2.png");
+	border-radius: 1.5em;
+	display: inline-block;
+	padding: 1em 2em 1.5em;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 55px;
+	margin: 0 0 0.3em;
+	color: #FFFFFF;
+}
+
+.stats {
+	background: #FFFFFF;
+	border-top-left-radius: 0.3em;
+	border-top-right-radius: 0.3em;
+	font-family: 'Aclonica', sans-serif;
+	padding: 0.2em 0.2em;
+}
+.stats .flags, .stats .time {
+	font-size: 1.5em;
+	margin-top: 0.05em;
+	padding: 0.1em 0.3em;
+}
+.stats .flags {
+	float: left;
+}
+.stats .time {
+	float: right;
+}
+.stats .smiley {
+	font-size: 2.2em;
+	line-height: 1;
+}
+
+#board table {
+    border-collapse: collapse;
+	clear: both;
+	font-size: 1.7em;
+}
+#board table td {
+	border: 1px solid #ccc;
+	height: 1.3em;
+	width: 1.3em;
+	line-height: 0;
+	position: relative;
+	text-align: center;
+}
+#board table td:hover:before {
+	outline: 1px solid black;
+	content: '';
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#board table td.isMine {
+	/*invisible*/
+}
+#board table td.flag {
+	background: #fdd;
+}
+#board table td.flag:after {
+	color: red;
+	content: '\2691';
+}
+#board table td.mine:after {
+	color: black;
+	content: '\2600';
+}
+#board table td.revealed-0 {
+	color: #aaa;
+}
+#board table td.revealed-1 {
+	color: #282;
+}
+#board table td.revealed-2 {
+	color: #cc0;
+}
+#board table td.revealed-3 {
+	color: #22a;
+}
+#board table td.revealed-4 {
+	color: #822;
+}
+
+form {
+	margin-top: .8em;
+}
+
+input[type=number] {
+	width: 3em;
+}
+
+input[type=submit] {
+	background: #45c;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	display: block;
+	font-size: 1.8em;
+	margin: 0.2em auto 0;
+	padding: 0.3em 0.6em;
+}
+input[type=submit]:hover {
+	background: #34a;
+}
