@@ -4,6 +4,13 @@ html {
 	font-family: 'Aclonica', sans-serif;
 	text-align: center;
 }
+.wholePage{
+	width: 90%;
+}
+#title{
+	padding: 20px;
+	color: 
+}
 
 .container {
 	background-image: url("backgroundImg2.png");
@@ -46,6 +53,8 @@ h1 {
     border-collapse: collapse;
 	clear: both;
 	font-size: 1.7em;
+	color: yellow;
+
 }
 #board table td {
 	border: 1px solid #ccc;
@@ -54,6 +63,7 @@ h1 {
 	line-height: 0;
 	position: relative;
 	text-align: center;
+
 }
 #board table td:hover:before {
 	outline: 1px solid black;
@@ -72,35 +82,39 @@ h1 {
 	background: #fdd;
 }
 #board table td.flag:after {
-	color: red;
+	color: #990000;
 	content: '\2691';
 }
 #board table td.mine:after {
-	color: black;
+	color: #990000;
 	content: '\2600';
 }
 #board table td.revealed-0 {
-	color: #aaa;
+	color: #6699cc;
 }
 #board table td.revealed-1 {
-	color: #282;
+	color: #0066ff;
 }
 #board table td.revealed-2 {
-	color: #cc0;
+	color: #66ff33;
 }
 #board table td.revealed-3 {
-	color: #22a;
+	color: #66cc33;
 }
 #board table td.revealed-4 {
-	color: #822;
+	color: #6633ff;
 }
 
 form {
-	margin-top: .8em;
+	margin-top: .9em;
+	color: #FFFFFF;
+	font-size: 1.3em;
 }
 
 input[type=number] {
 	width: 3em;
+	height: 1.5em;
+	font-size: 1.3em;
 }
 
 input[type=submit] {
@@ -109,7 +123,7 @@ input[type=submit] {
 	color: white;
 	cursor: pointer;
 	display: block;
-	font-size: 1.8em;
+	font-size: 2em;
 	margin: 0.2em auto 0;
 	padding: 0.3em 0.6em;
 }

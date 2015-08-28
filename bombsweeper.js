@@ -144,7 +144,7 @@
 		}, true);
 	};
 
-	function Minesweeper(w, h, minesPercentage, container) {
+	function bombsweeper(w, h, minesPercentage, container) {
 		this.w = w;
 		this.h = h;
 		this.minesPercentage = minesPercentage;
@@ -159,7 +159,7 @@
 
 		this._init();
 	}
-	Minesweeper.prototype._init = function() {
+	bombsweeper.prototype._init = function() {
 		var game = this;
 
 		//Start
@@ -198,7 +198,7 @@
 			}, false);
 		});
 	}
-	Minesweeper.prototype.renderStats = function() {
+	bombsweeper.prototype.renderStats = function() {
 		if (!this.stats.flags) {
 			var stats = document.createElement('div');
 			this.stats.flags = document.createElement('div');
@@ -245,7 +245,7 @@
 				this.stats.smiley.innerHTML = '?';
 		}
 	}
-	Minesweeper.prototype.checkState = function() {
+	bombsweeper.prototype.checkState = function() {
 		var allRevealed = true,
 			allFlagged = true,
 			mineRevealed = false;
@@ -273,6 +273,6 @@
 		this.renderStats();
 	}
 
-	window.Minesweeper = Minesweeper;
+	window.bombsweeper = bombsweeper;
 
 })();
